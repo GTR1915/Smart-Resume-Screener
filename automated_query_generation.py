@@ -325,7 +325,12 @@ def run_query_with_headers(query: str):
     # Combine headers + rows
     return [headers] + rows
 
-query = create_query("Show me all candidates who know Angular and Django and also show how number of projects they have worked on")
+query = create_query(input("Enter you query: "))
+'''
+Query example:
+Show me all candidates who know Angular and Django and also show how number of projects they have worked on
+Tell me the total number of candidated already present in the database.
+'''
 print("Generated SQL Query:")
 print(query)
 
